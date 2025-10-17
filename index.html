@@ -38,25 +38,6 @@
     to { transform: translate(100px, 50px) rotate(45deg); }
   }
   
-  .corner-orb {
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow: 0 0 15px #fff, 0 0 30px #fff;
-    animation: orb-pulse 4s infinite ease-in-out;
-    z-index: 2;
-  }
-  @keyframes orb-pulse {
-    0%, 100% { transform: scale(0.8); opacity: 0.5; }
-    50% { transform: scale(1.2); opacity: 1; }
-  }
-  .corner-orb.tl { top: 30px; left: 30px; animation-delay: 0s; }
-  .corner-orb.tr { top: 30px; right: 30px; animation-delay: 1s; }
-  .corner-orb.bl { bottom: 30px; left: 30px; animation-delay: 2s; }
-  .corner-orb.br { bottom: 30px; right: 30px; animation-delay: 3s; }
-  
   .aura-container {
     position: relative;
     width: 90%;
@@ -141,9 +122,6 @@
     <div class="aura-light"></div>
     <div class="aura-light"></div>
   </div>
-  
-  <div class="corner-orb tl"></div><div class="corner-orb tr"></div>
-  <div class="corner-orb bl"></div><div class="corner-orb br"></div>
   
   <div class="aura-container">
     <div class="header">
